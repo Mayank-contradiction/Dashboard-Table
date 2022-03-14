@@ -11,6 +11,8 @@ process.on('uncaughtException', (error)=>{
         process.exit(1);
 });
 
+//dotenv.config({ path: 'config/config.env'});
+
 //Setting up the config file in development mode
 const port = process.env.PORT || 8000;
 

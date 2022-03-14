@@ -7,7 +7,7 @@
 # production
 /frontend/build
 
-/backend/.env
+/backend/config/config.env
 
 # misc
 /frontend/.env.local
