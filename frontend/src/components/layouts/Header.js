@@ -7,9 +7,9 @@ const Header = () => {
     const dispatch = useDispatch();
     const history = useHistory();
     const { userLoginLoading, userLoginMessage} = useSelector(state=> state.userLogin);
-    const logoutHandler = () => {
-        dispatch(logout());
-        history.go('/');
+    const logoutHandler = async() => {
+        await dispatch(logout());
+        history.push('/');
     }
     return (
         <nav className="navbar navbar-expand-sm mb-3 border-bottom">

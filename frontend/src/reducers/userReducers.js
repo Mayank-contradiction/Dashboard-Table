@@ -63,7 +63,8 @@ export const userLoginReducer = (state = { userLoginMessage: {} }, action) => {
         case LOGOUT_SUCCESS:
             return{
                 ...state,
-                userLoginMessage: {}
+                isLogout: true,
+                userLoginMessage: null
             }
         case LOGOUT_FAIL:
             return{
